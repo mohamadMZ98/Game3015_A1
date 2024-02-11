@@ -1,0 +1,100 @@
+.TH "PassConstants" 3 "Wed Feb 1 2023" "Game3015-A1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PassConstants
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FrameResource\&.h>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "DirectX::XMFLOAT4X4 \fBView\fP = MathHelper::Identity4x4()"
+.br
+.ti -1c
+.RI "DirectX::XMFLOAT4X4 \fBInvView\fP = MathHelper::Identity4x4()"
+.br
+.ti -1c
+.RI "DirectX::XMFLOAT4X4 \fBProj\fP = MathHelper::Identity4x4()"
+.br
+.ti -1c
+.RI "DirectX::XMFLOAT4X4 \fBInvProj\fP = MathHelper::Identity4x4()"
+.br
+.ti -1c
+.RI "DirectX::XMFLOAT4X4 \fBViewProj\fP = MathHelper::Identity4x4()"
+.br
+.ti -1c
+.RI "DirectX::XMFLOAT4X4 \fBInvViewProj\fP = MathHelper::Identity4x4()"
+.br
+.ti -1c
+.RI "DirectX::XMFLOAT3 \fBEyePosW\fP = { 0\&.0f, 0\&.0f, 0\&.0f }"
+.br
+.ti -1c
+.RI "float \fBcbPerObjectPad1\fP = 0\&.0f"
+.br
+.ti -1c
+.RI "DirectX::XMFLOAT2 \fBRenderTargetSize\fP = { 0\&.0f, 0\&.0f }"
+.br
+.ti -1c
+.RI "DirectX::XMFLOAT2 \fBInvRenderTargetSize\fP = { 0\&.0f, 0\&.0f }"
+.br
+.ti -1c
+.RI "float \fBNearZ\fP = 0\&.0f"
+.br
+.ti -1c
+.RI "float \fBFarZ\fP = 0\&.0f"
+.br
+.ti -1c
+.RI "float \fBTotalTime\fP = 0\&.0f"
+.br
+.ti -1c
+.RI "float \fBDeltaTime\fP = 0\&.0f"
+.br
+.ti -1c
+.RI "DirectX::XMFLOAT4 \fBAmbientLight\fP = { 0\&.0f, 0\&.0f, 0\&.0f, 1\&.0f }"
+.br
+.ti -1c
+.RI "Light \fBLights\fP [MaxLights]"
+.br
+.in -1c
+.SH "Member Data Documentation"
+.PP 
+.SS "DirectX::XMFLOAT4 PassConstants::AmbientLight = { 0\&.0f, 0\&.0f, 0\&.0f, 1\&.0f }"
+
+.SS "float PassConstants::cbPerObjectPad1 = 0\&.0f"
+
+.SS "float PassConstants::DeltaTime = 0\&.0f"
+
+.SS "DirectX::XMFLOAT3 PassConstants::EyePosW = { 0\&.0f, 0\&.0f, 0\&.0f }"
+
+.SS "float PassConstants::FarZ = 0\&.0f"
+
+.SS "DirectX::XMFLOAT4X4 PassConstants::InvProj = MathHelper::Identity4x4()"
+
+.SS "DirectX::XMFLOAT2 PassConstants::InvRenderTargetSize = { 0\&.0f, 0\&.0f }"
+
+.SS "DirectX::XMFLOAT4X4 PassConstants::InvView = MathHelper::Identity4x4()"
+
+.SS "DirectX::XMFLOAT4X4 PassConstants::InvViewProj = MathHelper::Identity4x4()"
+
+.SS "Light PassConstants::Lights[MaxLights]"
+
+.SS "float PassConstants::NearZ = 0\&.0f"
+
+.SS "DirectX::XMFLOAT4X4 PassConstants::Proj = MathHelper::Identity4x4()"
+
+.SS "DirectX::XMFLOAT2 PassConstants::RenderTargetSize = { 0\&.0f, 0\&.0f }"
+
+.SS "float PassConstants::TotalTime = 0\&.0f"
+
+.SS "DirectX::XMFLOAT4X4 PassConstants::View = MathHelper::Identity4x4()"
+
+.SS "DirectX::XMFLOAT4X4 PassConstants::ViewProj = MathHelper::Identity4x4()"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game3015-A1 from the source code\&.

@@ -1,0 +1,73 @@
+.TH "FrameResource" 3 "Wed Feb 1 2023" "Game3015-A1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FrameResource
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FrameResource\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFrameResource\fP (ID3D12Device *device, UINT passCount, UINT objectCount, UINT materialCount)"
+.br
+.ti -1c
+.RI "\fBFrameResource\fP (const \fBFrameResource\fP &rhs)=delete"
+.br
+.ti -1c
+.RI "\fBFrameResource\fP & \fBoperator=\fP (const \fBFrameResource\fP &rhs)=delete"
+.br
+.ti -1c
+.RI "\fB~FrameResource\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "Microsoft::WRL::ComPtr< ID3D12CommandAllocator > \fBCmdListAlloc\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< UploadBuffer< \fBPassConstants\fP > > \fBPassCB\fP = nullptr"
+.br
+.ti -1c
+.RI "std::unique_ptr< UploadBuffer< MaterialConstants > > \fBMaterialCB\fP = nullptr"
+.br
+.ti -1c
+.RI "std::unique_ptr< UploadBuffer< \fBObjectConstants\fP > > \fBObjectCB\fP = nullptr"
+.br
+.ti -1c
+.RI "UINT64 \fBFence\fP = 0"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "FrameResource::FrameResource (ID3D12Device * device, UINT passCount, UINT objectCount, UINT materialCount)"
+
+.SS "FrameResource::FrameResource (const \fBFrameResource\fP & rhs)\fC [delete]\fP"
+
+.SS "FrameResource::~FrameResource ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBFrameResource\fP & FrameResource::operator= (const \fBFrameResource\fP & rhs)\fC [delete]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "Microsoft::WRL::ComPtr<ID3D12CommandAllocator> FrameResource::CmdListAlloc"
+
+.SS "UINT64 FrameResource::Fence = 0"
+
+.SS "std::unique_ptr<UploadBuffer<MaterialConstants> > FrameResource::MaterialCB = nullptr"
+
+.SS "std::unique_ptr<UploadBuffer<\fBObjectConstants\fP> > FrameResource::ObjectCB = nullptr"
+
+.SS "std::unique_ptr<UploadBuffer<\fBPassConstants\fP> > FrameResource::PassCB = nullptr"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game3015-A1 from the source code\&.

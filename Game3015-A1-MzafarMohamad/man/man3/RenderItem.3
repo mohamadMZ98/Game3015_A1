@@ -1,0 +1,81 @@
+.TH "RenderItem" 3 "Wed Feb 1 2023" "Game3015-A1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RenderItem
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SceneNode\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRenderItem\fP ()=default"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "XMFLOAT4X4 \fBWorld\fP = MathHelper::Identity4x4()"
+.br
+.ti -1c
+.RI "XMFLOAT4X4 \fBTexTransform\fP = MathHelper::Identity4x4()"
+.br
+.ti -1c
+.RI "int \fBNumFramesDirty\fP = \fBgNumFrameResources\fP"
+.br
+.ti -1c
+.RI "UINT \fBObjCBIndex\fP = \-1"
+.br
+.ti -1c
+.RI "Material * \fBMat\fP = nullptr"
+.br
+.ti -1c
+.RI "MeshGeometry * \fBGeo\fP = nullptr"
+.br
+.ti -1c
+.RI "D3D12_PRIMITIVE_TOPOLOGY \fBPrimitiveType\fP = D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST"
+.br
+.ti -1c
+.RI "UINT \fBIndexCount\fP = 0"
+.br
+.ti -1c
+.RI "UINT \fBStartIndexLocation\fP = 0"
+.br
+.ti -1c
+.RI "int \fBBaseVertexLocation\fP = 0"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "RenderItem::RenderItem ()\fC [default]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int RenderItem::BaseVertexLocation = 0"
+
+.SS "MeshGeometry* RenderItem::Geo = nullptr"
+
+.SS "UINT RenderItem::IndexCount = 0"
+
+.SS "Material* RenderItem::Mat = nullptr"
+
+.SS "int RenderItem::NumFramesDirty = \fBgNumFrameResources\fP"
+
+.SS "UINT RenderItem::ObjCBIndex = \-1"
+
+.SS "D3D12_PRIMITIVE_TOPOLOGY RenderItem::PrimitiveType = D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST"
+
+.SS "UINT RenderItem::StartIndexLocation = 0"
+
+.SS "XMFLOAT4X4 RenderItem::TexTransform = MathHelper::Identity4x4()"
+
+.SS "XMFLOAT4X4 RenderItem::World = MathHelper::Identity4x4()"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game3015-A1 from the source code\&.

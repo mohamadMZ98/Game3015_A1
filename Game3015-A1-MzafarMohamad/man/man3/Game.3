@@ -1,0 +1,64 @@
+.TH "Game" 3 "Wed Feb 1 2023" "Game3015-A1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Game
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Game\&.hpp>\fP
+.PP
+Inherits D3DApp\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGame\fP (HINSTANCE hInstance)"
+.br
+.ti -1c
+.RI "\fBGame\fP (const \fBGame\fP &rhs)=delete"
+.br
+.ti -1c
+.RI "\fBGame\fP & \fBoperator=\fP (const \fBGame\fP &rhs)=delete"
+.br
+.ti -1c
+.RI "\fB~Game\fP ()"
+.br
+.ti -1c
+.RI "virtual bool \fBInitialize\fP () override"
+.br
+.ti -1c
+.RI "std::vector< std::unique_ptr< \fBRenderItem\fP > > & \fBgetRenderItems\fP ()"
+.br
+.ti -1c
+.RI "std::unordered_map< std::string, std::unique_ptr< Material > > & \fBgetMaterials\fP ()"
+.br
+.ti -1c
+.RI "std::unordered_map< std::string, std::unique_ptr< MeshGeometry > > & \fBgetGeometries\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Game::Game (HINSTANCE hInstance)"
+
+.SS "Game::Game (const \fBGame\fP & rhs)\fC [delete]\fP"
+
+.SS "Game::~Game ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "std::unordered_map< std::string, std::unique_ptr< MeshGeometry > > & Game::getGeometries ()\fC [inline]\fP"
+
+.SS "std::unordered_map< std::string, std::unique_ptr< Material > > & Game::getMaterials ()\fC [inline]\fP"
+
+.SS "std::vector< std::unique_ptr< \fBRenderItem\fP > > & Game::getRenderItems ()\fC [inline]\fP"
+
+.SS "bool Game::Initialize ()\fC [override]\fP, \fC [virtual]\fP"
+
+.SS "\fBGame\fP & Game::operator= (const \fBGame\fP & rhs)\fC [delete]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game3015-A1 from the source code\&.

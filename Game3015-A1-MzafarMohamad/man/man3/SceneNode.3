@@ -1,0 +1,126 @@
+.TH "SceneNode" 3 "Wed Feb 1 2023" "Game3015-A1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SceneNode
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SceneNode\&.hpp>\fP
+.PP
+Inherited by \fBEntity\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef std::unique_ptr< \fBSceneNode\fP > \fBPtr\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSceneNode\fP (\fBGame\fP *\fBgame\fP)"
+.br
+.ti -1c
+.RI "void \fBattachChild\fP (\fBPtr\fP child)"
+.br
+.ti -1c
+.RI "\fBPtr\fP \fBdetachChild\fP (const \fBSceneNode\fP &node)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (const GameTimer &gt)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP () const"
+.br
+.ti -1c
+.RI "void \fBbuild\fP ()"
+.br
+.ti -1c
+.RI "XMFLOAT3 \fBgetWorldPosition\fP () const"
+.br
+.ti -1c
+.RI "void \fBsetPosition\fP (float x, float y, float z)"
+.br
+.ti -1c
+.RI "XMFLOAT3 \fBgetWorldRotation\fP () const"
+.br
+.ti -1c
+.RI "void \fBsetWorldRotation\fP (float x, float y, float z)"
+.br
+.ti -1c
+.RI "XMFLOAT3 \fBgetWorldScale\fP () const"
+.br
+.ti -1c
+.RI "void \fBsetScale\fP (float x, float y, float z)"
+.br
+.ti -1c
+.RI "XMFLOAT4X4 \fBgetWorldTransform\fP () const"
+.br
+.ti -1c
+.RI "XMFLOAT4X4 \fBgetTransform\fP () const"
+.br
+.ti -1c
+.RI "void \fBmove\fP (float x, float y, float z)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGame\fP * \fBgame\fP"
+.br
+.ti -1c
+.RI "\fBRenderItem\fP * \fBrenderer\fP"
+.br
+.in -1c
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef std::unique_ptr<\fBSceneNode\fP> \fBSceneNode::Ptr\fP"
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SceneNode::SceneNode (\fBGame\fP * game)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void SceneNode::attachChild (\fBPtr\fP child)"
+
+.SS "void SceneNode::build ()"
+
+.SS "\fBSceneNode::Ptr\fP SceneNode::detachChild (const \fBSceneNode\fP & node)"
+
+.SS "void SceneNode::draw () const"
+
+.SS "XMFLOAT4X4 SceneNode::getTransform () const"
+
+.SS "XMFLOAT3 SceneNode::getWorldPosition () const"
+
+.SS "XMFLOAT3 SceneNode::getWorldRotation () const"
+
+.SS "XMFLOAT3 SceneNode::getWorldScale () const"
+
+.SS "XMFLOAT4X4 SceneNode::getWorldTransform () const"
+
+.SS "void SceneNode::move (float x, float y, float z)"
+
+.SS "void SceneNode::setPosition (float x, float y, float z)"
+
+.SS "void SceneNode::setScale (float x, float y, float z)"
+
+.SS "void SceneNode::setWorldRotation (float x, float y, float z)"
+
+.SS "void SceneNode::update (const GameTimer & gt)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGame\fP* SceneNode::game\fC [protected]\fP"
+
+.SS "\fBRenderItem\fP* SceneNode::renderer\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game3015-A1 from the source code\&.
