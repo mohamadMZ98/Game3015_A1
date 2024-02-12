@@ -1,11 +1,11 @@
 #include "World.hpp"
 
 World::World(Game* game)
-	: mSceneGraph(new SceneNode(game))
-	, mGame(game)
+	: mSceneGraph(new SceneNode(game)) // initialize the scene graph with a new SceneNode
+	, mGame(game) // set the game pointer
 	, mPlayerAircraft(nullptr)
 	, mBackground(nullptr)
-	, mWorldBounds(-1.5f, 1.5f, 200.0f, 0.0f) //Left, Right, Down, Up
+	, mWorldBounds(-1.5f, 1.5f, 200.0f, 0.0f) // world bounds Left, Right, Down, Up
 	, mSpawnPosition(0.f, 0.f)
 	, mScrollSpeed(1.0f)
 {
@@ -13,6 +13,7 @@ World::World(Game* game)
 
 void World::update(const GameTimer& gt)
 {
+	// update the scene graph
 	mSceneGraph->update(gt);
 }
 
@@ -23,6 +24,7 @@ void World::draw(ID3D12GraphicsCommandList* cmdList, FrameResource* mCurrFrameRe
 
 void World::buildScene()
 {
+	// set up the player aircraft
 	std::unique_ptr<Aircraft> player(new Aircraft(Aircraft::Eagle, mGame));
 	mPlayerAircraft = player.get();
 	mPlayerAircraft->setPosition(0, 0.5, 0.0);
@@ -30,6 +32,7 @@ void World::buildScene()
 	mPlayerAircraft->setVelocity(1.0f, 0.0f, 0.0f);
 	mSceneGraph->attachChild(std::move(player));
 
+	// setup the enemy aircraft
 	std::unique_ptr<Aircraft> enemy1(new Aircraft(Aircraft::Raptor, mGame));
 	auto raptor = enemy1.get();
 	raptor->setPosition(0.5, 0.1, -0.5);
@@ -38,6 +41,7 @@ void World::buildScene()
 	//raptor->setVelocity(0.0f, 0.1f, 0.0f);
 	mPlayerAircraft->attachChild(std::move(enemy1));
 
+	// set up the second enemy
 	std::unique_ptr<Aircraft> enemy2(new Aircraft(Aircraft::Raptor, mGame));
 	auto raptor2 = enemy2.get();
 	raptor2->setPosition(-0.5, 0.1, -0.5);

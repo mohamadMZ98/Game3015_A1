@@ -1,7 +1,4 @@
-﻿  Aircraft.cpp
-D:\Downloads\Game3015-A1-main\Starter\Aircraft.cpp(73,52): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
-  Game.cpp
-D:\Downloads\Game3015-A1-main\Starter\Game.cpp(23,29): warning C4305: 'argument': truncation from 'double' to 'float'
-D:\Downloads\Game3015-A1-main\Starter\Game.cpp(24,26): warning C4305: 'argument': truncation from 'double' to 'float'
-  Generating Code...
-  Starter.vcxproj -> D:\Downloads\Game3015-A1-main\x64\Debug\Starter.exe
+﻿  Game.cpp
+D:\College Labs\GameEngineDevelopment2\Game3015_A1\Game3015-A1-MzafarMohamad\Starter\Game.cpp(23,29): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\College Labs\GameEngineDevelopment2\Game3015_A1\Game3015-A1-MzafarMohamad\Starter\Game.cpp(24,26): warning C4305: 'argument': truncation from 'double' to 'float'
+  Starter.vcxproj -> D:\College Labs\GameEngineDevelopment2\Game3015_A1\Game3015-A1-MzafarMohamad\x64\Debug\Starter.exe

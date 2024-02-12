@@ -197,7 +197,7 @@ void Game::OnKeyboardInput(const GameTimer& gt)
 		bool hit = false;
 		if (!hit)
 		{
-			//mCamera.Walk(10.0f * dt);
+			mCamera.Walk(10.0f * dt);
 		}
 	}
 
@@ -206,7 +206,7 @@ void Game::OnKeyboardInput(const GameTimer& gt)
 		bool hit = false;
 		if (!hit)
 		{
-			//mCamera.Walk(-10.0f * dt);
+			mCamera.Walk(-10.0f * dt);
 		}
 
 	}
@@ -215,7 +215,7 @@ void Game::OnKeyboardInput(const GameTimer& gt)
 		bool hit = false;
 		if (!hit)
 		{
-			//mCamera.Strafe(-10.0f * dt);
+			mCamera.Strafe(-10.0f * dt);
 		}
 
 
@@ -225,7 +225,7 @@ void Game::OnKeyboardInput(const GameTimer& gt)
 		bool hit = false;
 		if (!hit)
 		{
-			//mCamera.Strafe(10.0f * dt);
+			mCamera.Strafe(10.0f * dt);
 		}
 	}
 
